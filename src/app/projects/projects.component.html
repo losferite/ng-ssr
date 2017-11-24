@@ -1,0 +1,25 @@
+<section class="section">
+    <header class="section__header">
+        <div class="section__header-left">
+            <h1 class="section__title">Проекты</h1>
+        </div>
+    </header>
+    <div class="projects-list">
+        <figure class="project-item project-item--have_shadow" *ngFor="let project of projects">
+            <a href="#" title="#" class="project-item__link">
+            <span class="project-item__poster">
+                <img [src]="project.image.url" alt=""
+                     [title]="project.image.title"
+                     width="220"
+                     height="73">
+            </span>
+            <span class="project-item__title">{{project.nameRu || project.nameEn || project.nameJp}}</span>
+            <ul class="project-item__tags">
+                <li class="project-item__tag project-item__tag--show">тег</li>
+                <li class="project-item__tag project-item__tag--show">еще один</li>
+                <li class="project-item__tag project-item__tag--show">хватит</li>
+            </ul>
+            </a>
+        </figure>
+    </div>
+</section>
