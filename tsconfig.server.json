@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": ["node"]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "**/*.e2e-spec.ts"
+  ]
+}

@@ -20,8 +20,8 @@ import { ProjectsService } from './projects/projects.service';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    HttpClientModule,
-    BrowserTransferStateModule,
+    // HttpClientModule,
+    // BrowserTransferStateModule,
     BrowserModule.withServerTransition({ appId: 'rura' }),
   ],
   providers: [
